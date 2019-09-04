@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <link href="contact_form.css" rel="stylesheet" type="text/css"/>
+    <meta charset="UTF-8">
+    <title>Yhteystiedot</title>
+</head>
+<body>
+
+<?php
+
+include "header.html";
+
+?>
+
+<br><br><br><br>
+<h1>Yhteystiedot</h1>
+
+<div class="services">
+
+    Tiimimme tietää, että joskus on vaikeaa valita oikea kahvikone tai hyvänmakuinen kahvi, toisinaan syntyy monenlaisia kysymyksiä kahvikoneen huollosta, toiminnoista, laitteista ja käytöstä.
+
+    Olemme aina valmiit vastaamaan kysymyksiisi ja autamme oikean valinnan tekemisessä, joten ota meihin rohkeasti yhteyttä!
+
+</div>
+
+<div class="services">
+
+
+    <div class="container">
+        <h2>Yhteydenottolomake</h2>
+        <form action="yhteystiedot.php" method="post">
+            <div class="field-block">
+                <label for="name">Nimesi:</label>
+                <input id="name" class="field" name="name" required type="text" placeholder="Nimi Sukunimi">
+            </div>
+            <div class="field-block">
+                <label for="email">Sinun E-mail:</label
+                <input id="email" class="field" name="email" required type="email" placeholder="tihonen@email.com">
+            </div>
+            <div class="field-block">
+                <label for="phone">Sinun puhelinnumero:</label>
+                <input id="phone" class="field" name="phone" required type="text" placeholder="+358 021 1212">
+            </div>
+            <div class="field-block">
+                <label for="message">Viesti:</label>
+                <textarea id="message" class="field" required name="message" rows="4"></textarea>
+            </div>
+            <div class="field-block">
+                <span class="check-text">En ole robotti</span>
+            </div>
+            <button id="button" class="button" type="submit">Lähetä</button>
+            <div class="result">
+                <span id="answer"></span>
+                <span id="loader"><img src="images/loader.gif" alt=""></span>
+            </div>
+        </form>
+    </div>
+
+
+    <div id="kontakt">
+        <ul>
+            <img id="logo" src="http://vending.fi/wp-content/uploads/2018/12/PINKKI-VALMIS-LOGO.png" alt="Rapid Tools" width="155" height="155" />
+            <li>Rapid Tools</li>
+            <li>Suunnistajankuja 6C</li>
+            <li>01280 Vantaa</li>
+
+            <li>Y-tunnus: 2716089-9</li>
+            <li>Puhelin: 040 025 7903</li>
+            <li>Site: <a href="http://vending.fi/">www.vending.fi</a></li>
+
+            <li><a href="mailto:rapid.vending@hotmail.com">rapid.tools@hotmail.com</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/main.js"></script>
+
+
+<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1981.1218399050706!2d24.899828551190694!3d60.2283602455678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df6279d254b0d%3A0x8ad344d36f93d724!2sTeuvo+Pakkalan+tie+8%2C+00400+Helsinki!5e0!3m2!1sen!2sfi!4v1502885605828" width="480" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+</body>
+</html>
